@@ -2,7 +2,7 @@
   {
     "id": 1,
     "category": "Hair",
-    "title": "Sed dignissim quam nulla, at sodales elit venenatis at. In in  fringilla",
+    "title": "Vivamus placerat Luctus Neque nec Faucibus",
     "author-name": "Sarfraz Jasim",
     "img": "https://images.unsplash.com/photo-1496440543089-3d0eb669f6f6?auto=format&fit=crop&q=80&w=1514&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "description": "Donec eget leo laoreet, faucibus ante et, finibus orci. Nam pulvinar felis vel mi aliquam, vitae dapibus odio euismod. Cras bibendum nisi a interdum facilisis…..",
@@ -12,27 +12,18 @@
     "id": 2,
     "category": "MAKEUP",
     "title": "Vivamus placerat Luctus Neque nec Faucibus",
-    "author-name": "Jane Doe",
-    "img": "recipes.jpg",
+    "author-name": "By Sarfraz Jasim",
+    "img": "https://images.unsplash.com/photo-1602910344008-22f323cc1817?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "description": "",
     "date": "2023-10-18"
   },
   {
     "id": 3,
-    "category": "History",
-    "title": "The History of Ancient Civilizations",
+    "category": "Tips",
+    "title": "Vivamus placerat Luctus Neque nec Faucibus",
     "author-name": "David Brown",
-    "img": "history.jpg",
+    "img": "https://images.unsplash.com/photo-1597225244660-1cd128c64284?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "description": "A journey through the rise and fall of ancient empires.",
     "date": "2023-10-17"
-  },
-  {
-    "id": 4,
-    "category": "Technology",
-    "title": "Innovations in Tech: Past and Future",
-    "author-name": "Maria Garcia",
-    "img": "tech.jpg",
-    "description": "Discover the evolution of technology and what the future holds.",
-    "date": "2023-10-16"
   }
 ]
