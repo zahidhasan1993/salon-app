@@ -6,11 +6,14 @@ import img2 from "./assets/category-images/2.jpg";
 import img3 from "./assets/category-images/3.jpg";
 import img4 from "./assets/category-images/4.jpg";
 import img5 from "./assets/category-images/5.jpg";
+import popularImg1 from "./assets/blog-image/2.jpg";
+import popularImg2 from "./assets/blog-image/3.jpg";
 import SectionTitle from "./components/shared/SectionTitle";
 import PostCard from "./components/shared/PostCard";
 import { useEffect, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { FaConfluence } from "react-icons/fa";
+import TopAuthor from "./components/TopAuthor";
 
 const App = () => {
   const categoryItems = [
@@ -41,7 +44,7 @@ const App = () => {
     },
   ];
   const [latest, setLatest] = useState([]);
-  const [popular,setPopular] = useState([]);
+  const [popular, setPopular] = useState([]);
   useEffect(() => {
     fetch("latest.json")
       .then((res) => res.json())
@@ -73,7 +76,7 @@ const App = () => {
       <SectionTitle title="Latest Post"></SectionTitle>
       {/* latest post section */}
       <div className="container mx-auto">
-        <div className="container mx-auto md:grid md:grid-cols-3 gap-10 mb-60">
+        <div className="container mx-auto md:grid md:grid-cols-3 gap-10 mb-40">
           {latest.map((item) => (
             <div key={item.id}>
               <div>
@@ -89,7 +92,9 @@ const App = () => {
                       {item.category}
                     </p>
                     <p className="text-2xl mb-5">{item.title}</p>
-                    <p className="text-gray-700">author name - 29 july 2023</p>
+                    <p className="text-gray-700">
+                      by {item.author_name} - {item.date}
+                    </p>
                   </div>
                   {/* adding text on top of image */}
                 </div>
@@ -124,7 +129,7 @@ const App = () => {
       <SectionTitle title="Popular Post"></SectionTitle>
       {/* popular posts */}
       <div className="container mx-auto">
-        <div className="container mx-auto md:grid md:grid-cols-3 gap-10 mb-60">
+        <div className="container mx-auto md:grid md:grid-cols-3 gap-10 mb-40">
           {popular.map((item) => (
             <div key={item.id}>
               <div>
@@ -140,7 +145,9 @@ const App = () => {
                       {item.category}
                     </p>
                     <p className="text-2xl mb-5">{item.title}</p>
-                    <p className="text-gray-700">author name - 29 july 2023</p>
+                    <p className="text-gray-700">
+                      by {item.author_name} - {item.date}
+                    </p>
                   </div>
                   {/* adding text on top of image */}
                 </div>
@@ -148,7 +155,41 @@ const App = () => {
             </div>
           ))}
         </div>
+
+        <div className="flex gap-10">
+          <div className="relative w-full mb-40">
+            <LazyLoadImage
+              src={popularImg2}
+              alt="Image"
+              className="w-full h-96 rounded"
+            />
+
+            <div className="absolute top-72 left-20 w-4/5 bg-white p-8 text-center border border-black">
+              <p className="text-gray-700 my-3 text-center underline">SKIN</p>
+              <p className="text-2xl mb-5">
+                Vivamus placerat Luctus Neque nec Faucibus Vivamus ultricies
+                arcu Vivamus
+              </p>
+              <p className="text-gray-700">By Sarfraz Jasim - 29 july 2023</p>
+            </div>
+          </div>
+          <div className="relative w-full mb-40">
+            <LazyLoadImage
+              src={popularImg1}
+              alt="Image"
+              className="w-full h-96 rounded"
+            />
+
+            <div className="absolute top-72 left-20 w-4/5 bg-white p-8 text-center border border-black">
+              <p className="text-gray-700 my-3 text-center underline">Tips</p>
+              <p className="text-2xl mb-5">Vivamus placerat Luctus Neque nec Faucibus Vivamus ultricies arcu Vivamus</p>
+              <p className="text-gray-700">By Sarfraz Jasim - 25 sep 2023</p>
+            </div>
+          </div>
+        </div>
       </div>
+      {/* top author details section */}
+      <TopAuthor></TopAuthor>
     </div>
   );
 };
