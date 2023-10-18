@@ -11,22 +11,27 @@ import img5 from "./assets/category-images/5.jpg"
 const App = () => {
   const categoryItems = [
     {
+      id: 1,
       name: "SKIN",
       img : img1
     },
     {
+      id: 2,
       name: "HAIR",
       img : img2
     },
     {
+      id: 3,
       name: "MAKEUP",
       img : img3
     },
     {
+      id: 4,
       name: "TIPS",
       img : img4
     },
     {
+      id: 5,
       name: "SPA",
       img : img5
     },
@@ -35,7 +40,11 @@ const App = () => {
     <div className="">
       <Navbar></Navbar>
       <Banner></Banner>
-      <Category></Category>
+      <div className="container mx-auto grid grid-cols-1 gap-5 md:grid md:grid-cols-5 md:gap-8 mt-12 w-full">
+        {
+          categoryItems.map(item => <Category key={item.id} item={item}></Category>)
+        }
+      </div>
       
     </div>
   );
