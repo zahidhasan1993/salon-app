@@ -1,6 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-
+import img1 from "../assets/banner-images/1.jpg"
+import img2 from "../assets/banner-images/2.jpg"
+import img3 from "../assets/banner-images/3.jpg"
 import "swiper/css";
 import "swiper/css/navigation";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -11,8 +13,8 @@ const Banner = () => {
     <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
       <SwiperSlide>
         <LazyLoadImage
-          src="https://images.unsplash.com/photo-1509650382971-17f6cae19506?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-          className="w-full h-[35rem] relative"
+          src={img2}
+          className="w-full h-[38rem] relative"
         />
         <div className="h-[22rem] border-2 border-white absolute text-white top-[7rem] right-[10rem] p-8">
           <p className="text-sm underline mb-5">SKIN</p>
@@ -29,8 +31,8 @@ const Banner = () => {
       </SwiperSlide>
       <SwiperSlide>
         <LazyLoadImage
-          src="https://images.unsplash.com/photo-1509650382971-17f6cae19506?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-          className="w-full h-[35rem] relative"
+          src={img3}
+          className="w-full h-[38rem] relative"
         />
         <div className="h-[22rem] border-2 border-white absolute text-white top-[7rem] right-[10rem] p-8">
           <p className="text-sm underline mb-5">SKIN</p>
@@ -47,8 +49,8 @@ const Banner = () => {
       </SwiperSlide>
       <SwiperSlide>
         <LazyLoadImage
-          src="https://images.unsplash.com/photo-1509650382971-17f6cae19506?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-          className="w-full h-[35rem] relative"
+          src={img1}
+          className="w-full h-[38rem] relative "
         />
         <div className="h-[22rem] border-2 border-white absolute text-white top-[7rem] right-[10rem] p-8">
           <p className="text-sm underline mb-5">SKIN</p>
