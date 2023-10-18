@@ -6,6 +6,8 @@ import img2 from "./assets/category-images/2.jpg";
 import img3 from "./assets/category-images/3.jpg";
 import img4 from "./assets/category-images/4.jpg";
 import img5 from "./assets/category-images/5.jpg";
+import SectionTitle from "./components/shared/SectionTitle";
+import PostCard from "./components/shared/PostCard";
 
 const App = () => {
   const categoryItems = [
@@ -45,10 +47,9 @@ const App = () => {
         ))}
       </div>
       {/* divider to latest post */}
-      <div className="my-20 container mx-auto flex justify-center items-center gap-0">
-        <div className="h-1 bg-black w-[40rem] mx-auto my-4"></div>
-        <p className="text-3xl ">Latest Post</p>
-        <div className="h-1 bg-black w-[40rem] mx-auto my-4"></div>
+      <SectionTitle title="Latest Post"></SectionTitle>
+      <div className="container mx-auto">
+        <PostCard></PostCard>
       </div>
     </div>
   );

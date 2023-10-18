@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import img1 from "../assets/banner-images/1.jpg"
-import img2 from "../assets/banner-images/2.jpg"
-import img3 from "../assets/banner-images/3.jpg"
+import img1 from "../assets/banner-images/1.jpg";
+import img2 from "../assets/banner-images/2.jpg";
+import img3 from "../assets/banner-images/3.jpg";
 import "swiper/css";
 import "swiper/css/navigation";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -10,12 +10,9 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Banner = () => {
   return (
-    <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+    <Swiper navigation={true} modules={[Navigation]} className="mySwiper h-[50rem]">
       <SwiperSlide>
-        <LazyLoadImage
-          src={img2}
-          className="w-full h-[38rem] relative"
-        />
+        <LazyLoadImage src={img2} className="w-full relative" />
         <div className="h-[22rem] border-2 border-white absolute text-white top-[7rem] right-[10rem] p-8">
           <p className="text-sm underline mb-5">SKIN</p>
           <p className="font-new text-5xl mb-5">
@@ -30,10 +27,7 @@ const Banner = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <LazyLoadImage
-          src={img3}
-          className="w-full h-[38rem] relative"
-        />
+        <LazyLoadImage src={img3} className="w-full relative" />
         <div className="h-[22rem] border-2 border-white absolute text-white top-[7rem] right-[10rem] p-8">
           <p className="text-sm underline mb-5">SKIN</p>
           <p className="font-new text-5xl mb-5">
@@ -48,10 +42,7 @@ const Banner = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <LazyLoadImage
-          src={img1}
-          className="w-full h-[38rem] relative "
-        />
+        <LazyLoadImage src={img1} className="w-full relative " />
         <div className="h-[22rem] border-2 border-white absolute text-white top-[7rem] right-[10rem] p-8">
           <p className="text-sm underline mb-5">SKIN</p>
           <p className="font-new text-5xl mb-5">
