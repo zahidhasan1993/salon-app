@@ -1,11 +1,35 @@
 import { useState } from "react";
-import { FaSearch } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInnosoft,
+  FaInstagram,
+  FaLinkedin,
+  FaPinterest,
+  FaSearch,
+  FaTwitter,
+} from "react-icons/fa";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="w-full bg-white text-black body-font mb-4 shadow-sm">
       {/* :DESKTOP MENU */}
+      <div className="hidden py-5 md:flex md:justify-between md:items-center">
+        <p className="text-gray-700 ml-5">Welcome there!</p>
+        <div className="flex gap-2">
+          <FaFacebook className="text-3xl"></FaFacebook>
+          <FaInstagram className="text-3xl"></FaInstagram>
+          <FaInnosoft className="text-3xl"></FaInnosoft>
+          <FaTwitter className="text-3xl"></FaTwitter>
+          <FaPinterest className="text-3xl"></FaPinterest>
+          <FaLinkedin className="text-3xl"></FaLinkedin>
+          <p className="text-gray-300 ml-5 text-3xl">|</p>
+          <button className="py-2 px-5 bg-black text-white rounded-3xl hover:bg-white hover:text-black hover:scale-110 duration-300 ease-in-out ml-5">
+            Subscribe
+          </button>
+        </div>
+      </div>
+      <hr />
       <div className="container mx-auto flex justify-between items-center py-5 px-2">
         <div className="flex gap-16">
           {/* Site logo and Name */}
