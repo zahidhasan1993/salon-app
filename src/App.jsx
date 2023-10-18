@@ -41,12 +41,21 @@ const App = () => {
     },
   ];
   const [latest, setLatest] = useState([]);
+  const [popular,setPopular] = useState([]);
   useEffect(() => {
     fetch("latest.json")
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);
         setLatest(data);
+      });
+  }, []);
+  useEffect(() => {
+    fetch("popular.json")
+      .then((res) => res.json())
+      .then((data) => {
+        // console.log(data);
+        setPopular(data);
       });
   }, []);
 
@@ -62,6 +71,7 @@ const App = () => {
       </div>
       {/* divider to latest post */}
       <SectionTitle title="Latest Post"></SectionTitle>
+      {/* latest post section */}
       <div className="container mx-auto">
         <div className="container mx-auto md:grid md:grid-cols-3 gap-10 mb-60">
           {latest.map((item) => (
@@ -91,6 +101,7 @@ const App = () => {
       <div className="container mx-auto">
         <PostCard></PostCard>
       </div>
+      {/* download section */}
       <div className="mt-60 mb-20 relative container mx-auto">
         <LazyLoadImage src={img2} className="h-32 w-full object-cover " />
         {/* adding black gradient on top of image*/}
@@ -105,7 +116,37 @@ const App = () => {
               #1 Gutenberg Post Blocks
             </p>
           </div>
-          <button className="py-2 px-10 bg-white text-black rounded-3xl hover:bg-black hover:text-white hover:scale-125 duration-300 ease-in">Download Now</button>
+          <button className="py-2 px-10 bg-white text-black rounded-3xl hover:bg-black hover:text-white hover:scale-125 duration-300 ease-in">
+            Download Now
+          </button>
+        </div>
+      </div>
+      <SectionTitle title="Popular Post"></SectionTitle>
+      {/* popular posts */}
+      <div className="container mx-auto">
+        <div className="container mx-auto md:grid md:grid-cols-3 gap-10 mb-60">
+          {popular.map((item) => (
+            <div key={item.id}>
+              <div>
+                <div className="relative w-full">
+                  <LazyLoadImage
+                    src={item.img}
+                    alt="Image"
+                    className="w-full h-72 rounded"
+                  />
+                  {/* adding black gradient on top of image*/}
+                  <div className="absolute top-48 left-12 w-4/5 bg-white p-8 text-center border border-black">
+                    <p className="text-gray-700 my-3 text-center underline">
+                      {item.category}
+                    </p>
+                    <p className="text-2xl mb-5">{item.title}</p>
+                    <p className="text-gray-700">author name - 29 july 2023</p>
+                  </div>
+                  {/* adding text on top of image */}
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

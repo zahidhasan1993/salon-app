@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "category": "Skin",
+      "title": "Vivamus placerat Luctus Neque nec Faucibus",
+      "author-name": "Sarfraz Jasim",
+      "img": "https://images.unsplash.com/photo-1503236823255-94609f598e71?auto=format&fit=crop&q=80&w=1469&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Donec eget leo laoreet, faucibus ante et, finibus orci. Nam pulvinar felis vel mi aliquam, vitae dapibus odio euismod. Cras bibendum nisi a interdum facilisis…..",
+      "date": "2023-10-19"
+    },
+    {
+      "id": 2,
+      "category": "Hair",
+      "title": "Vivamus placerat Luctus Neque nec Faucibus",
+      "author-name": "By Sarfraz Jasim",
+      "img": "https://images.unsplash.com/photo-1613966802194-d46a163af70d?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "",
+      "date": "2023-10-18"
+    },
+    {
+      "id": 3,
+      "category": "Makeup",
+      "title": "Vivamus placerat Luctus Neque nec Faucibus",
+      "author-name": "David Brown",
+      "img": "https://images.unsplash.com/photo-1627037118727-cd7095b7ef02?auto=format&fit=crop&q=80&w=1471&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "A journey through the rise and fall of ancient empires.",
+      "date": "2023-10-17"
+    }
+  ]
+  
