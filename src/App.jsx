@@ -27,6 +27,7 @@ import TopAuthor from "./components/TopAuthor";
 import RandomPostCard from "./components/shared/RandomPostCard";
 import RandomPostCard2 from "./components/shared/RandomPostCard2";
 import SubscribeUs from "./components/SubscribeUs";
+import Footer from "./components/Footer";
 
 const App = () => {
   const categoryItems = [
@@ -307,6 +308,7 @@ const App = () => {
 
       {/* subscribe section */}
       <SubscribeUs></SubscribeUs>
+      <Footer></Footer>
     </div>
   );
 };
