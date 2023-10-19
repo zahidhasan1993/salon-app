@@ -21,6 +21,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { FaConfluence } from "react-icons/fa";
 import TopAuthor from "./components/TopAuthor";
 import RandomPostCard from "./components/shared/RandomPostCard";
+import RandomPostCard2 from "./components/shared/RandomPostCard2";
 
 const App = () => {
   const categoryItems = [
@@ -228,6 +229,52 @@ const App = () => {
         date="29 July, 2023"
         discription="Donec eget leo laoreet, faucibus ante et, finibus orci. Nam pulvinar felis vel mi aliquam, vitae dapibus odio euismod. Cras bibendum nisi a interdum facilisis….."
       ></RandomPostCard>
+
+      <RandomPostCard2
+        img={randomImg2}
+        category="SPA"
+        title="Sed dignissim quam nulla, at sodales elit venenatis at. In in  fringilla"
+        author="By Sarfraz Jasim"
+        date="29 July, 2023"
+        discription="Donec eget leo laoreet, faucibus ante et, finibus orci. Nam pulvinar felis vel mi aliquam, vitae dapibus odio euismod. Cras bibendum nisi a interdum facilisis….."
+      ></RandomPostCard2>
+
+      <div className="mt-[43rem]">
+        <RandomPostCard
+          img={randomImg3}
+          category="MAKEUP"
+          title="Sed dignissim quam nulla, at sodales elit venenatis at. In in  fringilla"
+          author="By Sarfraz Jasim"
+          date="29 July, 2023"
+          discription="Donec eget leo laoreet, faucibus ante et, finibus orci. Nam pulvinar felis vel mi aliquam, vitae dapibus odio euismod. Cras bibendum nisi a interdum facilisis….."
+        ></RandomPostCard>
+      </div>
+      <RandomPostCard2
+        img={randomImg4}
+        category="Hair"
+        title="Sed dignissim quam nulla, at sodales elit venenatis at. In in  fringilla"
+        author="By Sarfraz Jasim"
+        date="29 July, 2023"
+        discription="Donec eget leo laoreet, faucibus ante et, finibus orci. Nam pulvinar felis vel mi aliquam, vitae dapibus odio euismod. Cras bibendum nisi a interdum facilisis….."
+      ></RandomPostCard2>
+      <div className="mt-[43rem]">
+        <RandomPostCard
+          img={randomImg5}
+          category="MAKEUP"
+          title="Sed dignissim quam nulla, at sodales elit venenatis at. In in  fringilla"
+          author="By Sarfraz Jasim"
+          date="29 July, 2023"
+          discription="Donec eget leo laoreet, faucibus ante et, finibus orci. Nam pulvinar felis vel mi aliquam, vitae dapibus odio euismod. Cras bibendum nisi a interdum facilisis….."
+        ></RandomPostCard>
+      </div>
+      <RandomPostCard2
+        img={randomImg6}
+        category="Tips"
+        title="Sed dignissim quam nulla, at sodales elit venenatis at. In in  fringilla"
+        author="By Sarfraz Jasim"
+        date="29 July, 2023"
+        discription="Donec eget leo laoreet, faucibus ante et, finibus orci. Nam pulvinar felis vel mi aliquam, vitae dapibus odio euismod. Cras bibendum nisi a interdum facilisis….."
+      ></RandomPostCard2>
     </div>
   );
 };
