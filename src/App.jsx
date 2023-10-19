@@ -239,16 +239,17 @@ const App = () => {
         discription="Donec eget leo laoreet, faucibus ante et, finibus orci. Nam pulvinar felis vel mi aliquam, vitae dapibus odio euismod. Cras bibendum nisi a interdum facilisis….."
       ></RandomPostCard2>
 
-      <div className="mt-[43rem]">
-        <RandomPostCard
-          img={randomImg3}
-          category="MAKEUP"
-          title="Sed dignissim quam nulla, at sodales elit venenatis at. In in  fringilla"
-          author="By Sarfraz Jasim"
-          date="29 July, 2023"
-          discription="Donec eget leo laoreet, faucibus ante et, finibus orci. Nam pulvinar felis vel mi aliquam, vitae dapibus odio euismod. Cras bibendum nisi a interdum facilisis….."
-        ></RandomPostCard>
-      </div>
+      <div className="mt-[43rem]"> </div>
+      <div className=" container mx-auto w-full border-t border-dashed border-black mb-20"></div>
+      <RandomPostCard
+        img={randomImg3}
+        category="MAKEUP"
+        title="Sed dignissim quam nulla, at sodales elit venenatis at. In in  fringilla"
+        author="By Sarfraz Jasim"
+        date="29 July, 2023"
+        discription="Donec eget leo laoreet, faucibus ante et, finibus orci. Nam pulvinar felis vel mi aliquam, vitae dapibus odio euismod. Cras bibendum nisi a interdum facilisis….."
+      ></RandomPostCard>
+
       <RandomPostCard2
         img={randomImg4}
         category="Hair"
@@ -257,7 +258,9 @@ const App = () => {
         date="29 July, 2023"
         discription="Donec eget leo laoreet, faucibus ante et, finibus orci. Nam pulvinar felis vel mi aliquam, vitae dapibus odio euismod. Cras bibendum nisi a interdum facilisis….."
       ></RandomPostCard2>
+
       <div className="mt-[43rem]">
+        <div className=" container mx-auto w-full border-t border-dashed border-black mb-20"></div>
         <RandomPostCard
           img={randomImg5}
           category="MAKEUP"
@@ -267,6 +270,7 @@ const App = () => {
           discription="Donec eget leo laoreet, faucibus ante et, finibus orci. Nam pulvinar felis vel mi aliquam, vitae dapibus odio euismod. Cras bibendum nisi a interdum facilisis….."
         ></RandomPostCard>
       </div>
+
       <RandomPostCard2
         img={randomImg6}
         category="Tips"
@@ -275,6 +279,11 @@ const App = () => {
         date="29 July, 2023"
         discription="Donec eget leo laoreet, faucibus ante et, finibus orci. Nam pulvinar felis vel mi aliquam, vitae dapibus odio euismod. Cras bibendum nisi a interdum facilisis….."
       ></RandomPostCard2>
+      <div className=" mt-[43rem] container mx-auto w-full border-t border-dashed border-black mb-20"></div>
+
+      <div className="text-center my-20">
+        <button className="py-3 px-8 bg-black text-white rounded-3xl hover:bg-white hover:text-black hover:scale-125 duration-300 ease-in-out">Load More</button>
+      </div>
     </div>
   );
 };
