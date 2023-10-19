@@ -8,6 +8,10 @@ import img4 from "./assets/category-images/4.jpg";
 import img5 from "./assets/category-images/5.jpg";
 import popularImg1 from "./assets/blog-image/2.jpg";
 import popularImg2 from "./assets/blog-image/3.jpg";
+import instaImg1 from "./assets/blog-image/instagram-feed/ethan-haddox-NTjSR3zYpsY-unsplash.jpg"
+import instaImg2 from "./assets/blog-image/instagram-feed/pascal-brauer-kwiw8pjg9jw-unsplash.jpg"
+import instaImg3 from "./assets/blog-image/instagram-feed/wesley-tingey-LpZvsGynEho-unsplash.jpg"
+import instaImg4 from "./assets/blog-image/instagram-feed/zulmaury-saavedra-vh_pAs2FH_8-unsplash.jpg"
 import randomImg1 from "./assets/blog-image/random-post/1.jpg";
 import randomImg2 from "./assets/blog-image/random-post/2.jpg";
 import randomImg3 from "./assets/blog-image/random-post/3.jpg";
@@ -220,6 +224,7 @@ const App = () => {
           </button>
         </div>
       </div>
+      {/* random post section */}
       <SectionTitle title="Random Post"></SectionTitle>
       <RandomPostCard
         img={randomImg1}
@@ -283,6 +288,20 @@ const App = () => {
 
       <div className="text-center my-20">
         <button className="py-3 px-8 bg-black text-white rounded-3xl hover:bg-white hover:text-black hover:scale-125 duration-300 ease-in-out">Load More</button>
+      </div>
+
+      {/* instafeed section */}
+      <SectionTitle title="Instagram Feed"></SectionTitle>
+      <div className="container mx-auto my-20">
+            <div className="flex justify-evenly">
+              <LazyLoadImage src={instaImg1} className="w-80 h-80"/>
+              <LazyLoadImage src={instaImg2} className="w-80 h-80"/>
+              <LazyLoadImage src={instaImg3} className="w-80 h-80"/>
+              <LazyLoadImage src={instaImg4} className="w-80 h-80"/>
+            </div>
+            <div className="w-full my-16">
+              <button className="w-full py-3 px-8 bg-black text-white rounded-3xl hover:bg-white hover:text-black hover:scale-125 duration-300 ease-in-out">Follow Us</button>
+            </div>
       </div>
     </div>
   );
