@@ -26,6 +26,7 @@ import { FaConfluence } from "react-icons/fa";
 import TopAuthor from "./components/TopAuthor";
 import RandomPostCard from "./components/shared/RandomPostCard";
 import RandomPostCard2 from "./components/shared/RandomPostCard2";
+import SubscribeUs from "./components/SubscribeUs";
 
 const App = () => {
   const categoryItems = [
@@ -303,6 +304,9 @@ const App = () => {
               <button className="w-full py-3 px-8 bg-black text-white rounded-3xl hover:bg-white hover:text-black hover:scale-125 duration-300 ease-in-out">Follow Us</button>
             </div>
       </div>
+
+      {/* subscribe section */}
+      <SubscribeUs></SubscribeUs>
     </div>
   );
 };
