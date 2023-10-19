@@ -76,7 +76,7 @@ const App = () => {
       <SectionTitle title="Latest Post"></SectionTitle>
       {/* latest post section */}
       <div className="container mx-auto">
-        <div className="container mx-auto md:grid md:grid-cols-3 gap-10 mb-40">
+        <div className="container mx-auto md:grid md:grid-cols-3 gap-10 mb-52">
           {latest.map((item) => (
             <div key={item.id}>
               <div>
@@ -91,7 +91,7 @@ const App = () => {
                     <p className="text-gray-700 my-3 text-center underline">
                       {item.category}
                     </p>
-                    <p className="text-2xl mb-5">{item.title}</p>
+                    <p className="text-4xl mb-5 font-new font-semibold">{item.title}</p>
                     <p className="text-gray-700">
                       by {item.author_name} - {item.date}
                     </p>
@@ -128,8 +128,8 @@ const App = () => {
       </div>
       <SectionTitle title="Popular Post"></SectionTitle>
       {/* popular posts */}
-      <div className="container mx-auto">
-        <div className="container mx-auto md:grid md:grid-cols-3 gap-10 mb-40">
+      <div className="container mx-auto my-16">
+        <div className="container mx-auto md:grid md:grid-cols-3 gap-10 mb-52">
           {popular.map((item) => (
             <div key={item.id}>
               <div>
@@ -144,7 +144,7 @@ const App = () => {
                     <p className="text-gray-700 my-3 text-center underline">
                       {item.category}
                     </p>
-                    <p className="text-2xl mb-5">{item.title}</p>
+                    <p className="text-4xl mb-5 font-new font-semibold">{item.title}</p>
                     <p className="text-gray-700">
                       by {item.author_name} - {item.date}
                     </p>
@@ -166,14 +166,14 @@ const App = () => {
 
             <div className="absolute top-72 left-20 w-4/5 bg-white p-8 text-center border border-black">
               <p className="text-gray-700 my-3 text-center underline">SKIN</p>
-              <p className="text-2xl mb-5">
+              <p className="text-4xl mb-5 font-new font-semibold">
                 Vivamus placerat Luctus Neque nec Faucibus Vivamus ultricies
                 arcu Vivamus
               </p>
               <p className="text-gray-700">By Sarfraz Jasim - 29 july 2023</p>
             </div>
           </div>
-          <div className="relative w-full mb-40">
+          <div className="relative w-full mb-4">
             <LazyLoadImage
               src={popularImg1}
               alt="Image"
@@ -182,7 +182,10 @@ const App = () => {
 
             <div className="absolute top-72 left-20 w-4/5 bg-white p-8 text-center border border-black">
               <p className="text-gray-700 my-3 text-center underline">Tips</p>
-              <p className="text-2xl mb-5">Vivamus placerat Luctus Neque nec Faucibus Vivamus ultricies arcu Vivamus</p>
+              <p className="text-4xl mb-5 font-new font-semibold">
+                Vivamus placerat Luctus Neque nec Faucibus Vivamus ultricies
+                arcu Vivamus
+              </p>
               <p className="text-gray-700">By Sarfraz Jasim - 25 sep 2023</p>
             </div>
           </div>
@@ -190,6 +193,21 @@ const App = () => {
       </div>
       {/* top author details section */}
       <TopAuthor></TopAuthor>
+      {/* new download section */}
+      <div className="mt-20 mb-20 relative container mx-auto">
+        <LazyLoadImage src={img3} className="h-32 w-full object-cover " />
+        {/* adding black gradient on top of image*/}
+        <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60"></div>
+        <div className="absolute top-0 left-0 w-full h-full text-white px-8 py-5 flex justify-between items-center">
+          <div className="">
+            <p className="font-bold text-5xl font-new ">Best Gutenberg</p>
+            <p className="font-bold text-5xl font-new ">Post Grid Plugins</p>
+          </div>
+          <button className="py-2 px-10 bg-white text-black rounded-3xl hover:bg-black hover:text-white hover:scale-125 duration-300 ease-in">
+            Download Now
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

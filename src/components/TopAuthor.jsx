@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 const TopAuthor = () => {
   return (
-    <div className="h-96 w-full bg-[#DDD] py-20 px-80 mb-40">
+    <div className="h-96 w-full bg-[#DDD] py-20 px-80">
       <div className="flex justify-center items-center gap-10">
         <LazyLoadImage src={authorImg} className="w-52 h-52 rounded-full" />
         <div>
