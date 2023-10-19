@@ -13,7 +13,7 @@ const Banner = () => {
     <Swiper
       navigation={true}
       modules={[Navigation]}
-      className="mySwiper h-[50rem]"
+      className="mySwiper md:h-[50rem]"
     >
       <SwiperSlide>
         <LazyLoadImage src={img2} className="w-full relative" />

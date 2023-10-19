@@ -8,12 +8,19 @@ import img4 from "./assets/category-images/4.jpg";
 import img5 from "./assets/category-images/5.jpg";
 import popularImg1 from "./assets/blog-image/2.jpg";
 import popularImg2 from "./assets/blog-image/3.jpg";
+import randomImg1 from "./assets/blog-image/random-post/1.jpg";
+import randomImg2 from "./assets/blog-image/random-post/2.jpg";
+import randomImg3 from "./assets/blog-image/random-post/3.jpg";
+import randomImg4 from "./assets/blog-image/random-post/4.jpg";
+import randomImg5 from "./assets/blog-image/random-post/5.jpg";
+import randomImg6 from "./assets/blog-image/random-post/6.jpg";
 import SectionTitle from "./components/shared/SectionTitle";
 import PostCard from "./components/shared/PostCard";
 import { useEffect, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { FaConfluence } from "react-icons/fa";
 import TopAuthor from "./components/TopAuthor";
+import RandomPostCard from "./components/shared/RandomPostCard";
 
 const App = () => {
   const categoryItems = [
@@ -91,7 +98,9 @@ const App = () => {
                     <p className="text-gray-700 my-3 text-center underline">
                       {item.category}
                     </p>
-                    <p className="text-4xl mb-5 font-new font-semibold">{item.title}</p>
+                    <p className="text-4xl mb-5 font-new font-semibold">
+                      {item.title}
+                    </p>
                     <p className="text-gray-700">
                       by {item.author_name} - {item.date}
                     </p>
@@ -144,7 +153,9 @@ const App = () => {
                     <p className="text-gray-700 my-3 text-center underline">
                       {item.category}
                     </p>
-                    <p className="text-4xl mb-5 font-new font-semibold">{item.title}</p>
+                    <p className="text-4xl mb-5 font-new font-semibold">
+                      {item.title}
+                    </p>
                     <p className="text-gray-700">
                       by {item.author_name} - {item.date}
                     </p>
@@ -208,6 +219,15 @@ const App = () => {
           </button>
         </div>
       </div>
+      <SectionTitle title="Random Post"></SectionTitle>
+      <RandomPostCard
+        img={randomImg1}
+        category="MAKEUP"
+        title="Sed dignissim quam nulla, at sodales elit venenatis at. In in  fringilla"
+        author="By Sarfraz Jasim"
+        date="29 July, 2023"
+        discription="Donec eget leo laoreet, faucibus ante et, finibus orci. Nam pulvinar felis vel mi aliquam, vitae dapibus odio euismod. Cras bibendum nisi a interdum facilisis….."
+      ></RandomPostCard>
     </div>
   );
 };
