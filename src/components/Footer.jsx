@@ -21,10 +21,10 @@ const Footer = () => {
   const newDate = new Date().getFullYear();
   console.log(newDate);
   return (
-    <div className="bg-black py-16 px-32 text-white">
+    <div className="bg-black py-8 px-8 md:py-16 md:px-32 text-white">
       <div className="container mx-auto">
         {/* top content */}
-        <div className=" grid grid-cols-3 gap-32">
+        <div className=" md:grid md:grid-cols-3 md:gap-32">
           <div className="">
             <p className="text-2xl uppercase">categories</p>
             <div className="mt-10 flex justify-between">

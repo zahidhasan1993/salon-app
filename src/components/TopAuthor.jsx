@@ -10,9 +10,9 @@ import {
 } from "react-icons/fa";
 const TopAuthor = () => {
   return (
-    <div className="h-96 w-full bg-[#DDD] py-20 px-80">
-      <div className="flex justify-center items-center gap-10">
-        <LazyLoadImage src={authorImg} className="w-52 h-52 rounded-full" />
+    <div className="hidden md:block h-96 w-full bg-[#DDD] py-20 px-80">
+      <div className="md:flex md:justify-center md:items-center md:gap-10">
+        <LazyLoadImage src={authorImg} className="md:w-52 md:h-52 rounded-full" />
         <div>
           <p className="text-6xl font-new font-bold">Morbi Porttitor</p>
           <p>

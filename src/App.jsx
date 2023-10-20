@@ -153,7 +153,7 @@ const App = () => {
                   <LazyLoadImage
                     src={item.img}
                     alt="Image"
-                    className="w-full h-72 rounded"
+                    className="w-full md:h-72 rounded"
                   />
                   {/* adding black gradient on top of image*/}
                   <div className="md:absolute md:top-48 md:left-12 w-4/5 bg-white p-8 text-center border border-black">
@@ -191,14 +191,14 @@ const App = () => {
               <p className="text-gray-700">By Sarfraz Jasim - 29 july 2023</p>
             </div>
           </div>
-          <div className="relative w-full mb-4">
+          <div className="md:relative w-full mb-4">
             <LazyLoadImage
               src={popularImg1}
               alt="Image"
               className="w-full h-96 rounded"
             />
 
-            <div className="absolute top-72 left-20 w-4/5 bg-white p-8 text-center border border-black">
+            <div className="md:absolute md:top-72 md:left-20 md:w-4/5 bg-white p-8 text-center border border-black">
               <p className="text-gray-700 my-3 text-center underline">Tips</p>
               <p className="text-4xl mb-5 font-new font-semibold">
                 Vivamus placerat Luctus Neque nec Faucibus Vivamus ultricies
@@ -218,8 +218,8 @@ const App = () => {
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60"></div>
         <div className="absolute top-0 left-0 w-full h-full text-white px-8 py-5 flex justify-between items-center">
           <div className="">
-            <p className="font-bold text-5xl font-new ">Best Gutenberg</p>
-            <p className="font-bold text-5xl font-new ">Post Grid Plugins</p>
+            <p className="font-bold md:text-5xl font-new ">Best Gutenberg</p>
+            <p className="font-bold md:text-5xl font-new ">Post Grid Plugins</p>
           </div>
           <button className="py-2 px-10 bg-white text-black rounded-3xl hover:bg-black hover:text-white hover:scale-125 duration-300 ease-in">
             Download Now
@@ -246,7 +246,7 @@ const App = () => {
         discription="Donec eget leo laoreet, faucibus ante et, finibus orci. Nam pulvinar felis vel mi aliquam, vitae dapibus odio euismod. Cras bibendum nisi a interdum facilisis….."
       ></RandomPostCard2>
 
-      <div className="mt-[43rem]"> </div>
+      <div className="md:mt-[43rem]"> </div>
       <div className=" container mx-auto w-full border-t border-dashed border-black mb-20"></div>
       <RandomPostCard
         img={randomImg3}
@@ -297,11 +297,11 @@ const App = () => {
       {/* instafeed section */}
       <SectionTitle title="Instagram Feed"></SectionTitle>
       <div className="container mx-auto my-20">
-        <div className="flex justify-evenly">
-          <LazyLoadImage src={instaImg1} className="w-80 h-80" />
-          <LazyLoadImage src={instaImg2} className="w-80 h-80" />
-          <LazyLoadImage src={instaImg3} className="w-80 h-80" />
-          <LazyLoadImage src={instaImg4} className="w-80 h-80" />
+        <div className="md:flex md:justify-evenly">
+          <LazyLoadImage src={instaImg1} className="md:w-80 md:h-80" />
+          <LazyLoadImage src={instaImg2} className="md:w-80 md:h-80" />
+          <LazyLoadImage src={instaImg3} className="md:w-80 md:h-80" />
+          <LazyLoadImage src={instaImg4} className="md:w-80 md:h-80" />
         </div>
         <div className="w-full my-16">
           <button className="w-full py-3 px-8 bg-black text-white rounded-3xl hover:bg-white hover:text-black hover:scale-125 duration-300 ease-in-out">
