@@ -2,6 +2,12 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import blogImg1 from "../assets/blog-image/1.jpg";
 import blogImg2 from "../assets/blog-image/2.jpg";
 import blogImg3 from "../assets/blog-image/3.jpg";
+import galleryImg1 from "../assets/blog-image/footer-blog/1.jpg";
+import galleryImg2 from "../assets/blog-image/footer-blog/2.jpg";
+import galleryImg3 from "../assets/blog-image/footer-blog/3.jpg";
+import galleryImg4 from "../assets/blog-image/footer-blog/4.jpg";
+import galleryImg5 from "../assets/blog-image/footer-blog/5.jpg";
+import galleryImg6 from "../assets/blog-image/footer-blog/6.jpg";
 import {
   FaFacebook,
   FaInnosoft,
@@ -17,6 +23,7 @@ const Footer = () => {
   return (
     <div className="bg-black py-16 px-32 text-white">
       <div className="container mx-auto">
+        {/* top content */}
         <div className=" grid grid-cols-3 gap-32">
           <div className="">
             <p className="text-2xl uppercase">categories</p>
@@ -93,11 +100,45 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          <div>
+            <p className="uppercase text-2xl mb-10">Gallery</p>
+            <div className="md:grid md:grid-cols-3 gap-5">
+              <LazyLoadImage src={galleryImg1} className="w-28 h-20" />
+              <LazyLoadImage src={galleryImg2} className="w-28 h-20" />
+              <LazyLoadImage src={galleryImg3} className="w-28 h-20" />
+              <LazyLoadImage src={galleryImg4} className="w-28 h-20" />
+              <LazyLoadImage src={galleryImg5} className="w-28 h-20" />
+              <LazyLoadImage src={galleryImg6} className="w-28 h-20" />
+            </div>
+            <div className="mt-10">
+              <p className="uppercase text-2xl mb-10">tags</p>
+              <div className="md:grid md:grid-cols-3 md:gap-3 text-center">
+                <p className="uppercase py-2 px-5 rounded-3xl  bg-[#535353] text-[#CFCFCF]">
+                  Beauty
+                </p>
+                <p className="uppercase py-2 px-5 rounded-3xl  bg-[#535353] text-[#CFCFCF]">
+                  Tips
+                </p>
+                <p className="uppercase py-2 px-5 rounded-3xl bg-[#535353] text-[#CFCFCF]">
+                  makeup
+                </p>
+                <p className="uppercase py-2 px-5 rounded-3xl bg-[#535353] text-[#CFCFCF]">
+                  skin
+                </p>
+                <p className="uppercase py-2 px-5 rounded-3xl bg-[#535353] text-[#CFCFCF]">
+                  eye
+                </p>
+                <p className="uppercase py-2 px-5 rounded-3xl bg-[#535353] text-[#CFCFCF]">
+                  fashion
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         <hr className="text-white my-10" />
+        {/* bottom content */}
         <div className="">
           <header className="container mx-auto w-full bg-base text-white body-font mb-4 shadow-sm">
-            {/* :DESKTOP MENU */}
             <div className="container mx-auto flex justify-between items-center py-5 px-2">
               <div className="flex gap-[44rem]">
                 {/* Site logo and Name */}
