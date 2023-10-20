@@ -16,9 +16,9 @@ const Banner = () => {
       className="mySwiper md:h-[50rem]"
     >
       <SwiperSlide>
-        <LazyLoadImage src={img2} className="w-full relative" />
-        <div className="absolute text-white top-[7rem] right-[10rem]  border-2 border-white px-20 py-14">
-          <div className="h-[22rem]">
+        <LazyLoadImage src={img2} className="w-full md:relative" />
+        <div className="md:absolute md:text-white md:top-[7rem] md:right-[10rem]  border-2 md:border-white px-20 py-14">
+          <div className="md:h-[22rem]">
             <p className="text-sm underline mb-5">SKIN</p>
             <p className="font-new text-5xl mb-5">
               Six Hyaluronic Serums <br /> For Glowing Summer Skin <br />{" "}
@@ -33,9 +33,9 @@ const Banner = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <LazyLoadImage src={img3} className="w-full relative" />
-        <div className="absolute text-white top-[7rem] right-[10rem]  border-2 border-white px-20 py-14">
-          <div className="h-[22rem]">
+        <LazyLoadImage src={img3} className="w-full md:relative" />
+        <div className="md:absolute md:text-white md:top-[7rem] md:right-[10rem]  border-2 md:border-white px-20 py-14">
+          <div className="md:h-[22rem]">
             <p className="text-sm underline mb-5">SKIN</p>
             <p className="font-new text-5xl mb-5">
               Six Hyaluronic Serums <br /> For Glowing Summer Skin <br />{" "}
@@ -50,9 +50,9 @@ const Banner = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <LazyLoadImage src={img1} className="w-full relative " />
-        <div className="absolute text-white top-[7rem] right-[10rem]  border-2 border-white px-20 py-14">
-          <div className="h-[22rem]">
+        <LazyLoadImage src={img1} className="w-full md:relative " />
+        <div className="md:absolute md:text-white md:top-[7rem] md:right-[10rem]  border-2 md:border-white px-20 py-14">
+          <div className="md:h-[22rem]">
             <p className="text-sm underline mb-5">SKIN</p>
             <p className="font-new text-5xl mb-5">
               Six Hyaluronic Serums <br /> For Glowing Summer Skin <br />{" "}

@@ -12,7 +12,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="container mx-auto w-full bg-white text-black body-font mb-4 shadow-sm">
+    <header className="container mx-auto w-full bg-base text-black body-font mb-4 shadow-sm">
       {/* :DESKTOP MENU */}
       <div className="hidden py-5 md:flex md:justify-between md:items-center">
         <p className="text-gray-700 ml-5">Welcome there!</p>
